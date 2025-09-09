@@ -1,6 +1,6 @@
 # motor_fgd
 Repositorio del proyecto Motor FGD
 
-## Uso
+## Ejecución
 ```bash
-python -m mi_proyecto.main
+python -m fgd.main
