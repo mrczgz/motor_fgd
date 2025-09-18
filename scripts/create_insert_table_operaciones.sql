@@ -5,7 +5,9 @@ CREATE OR REPLACE TABLE operaciones (
     importe                 DECIMAL(15,2)           COMMENT 'Importe en la moneda local',
     importe_divisa          DECIMAL(15,2)           COMMENT 'Importe convertido a la divisa especificada',
     divisa                  CHAR(3)                 COMMENT 'Código ISO de la divisa (EUR, USD, GBP...)',
-    cuenta_principal        VARCHAR(34)             COMMENT 'IBAN o cuenta principal asociada'
+    cuenta_principal        VARCHAR(34)             COMMENT 'IBAN o cuenta principal asociada',
+    entidad                 VARCHAR(4)              COMMENT 'Entidad bancaria', 
+    periodo                 VARCHAR(4)              COMMENT 'Periodo'
 );
 
 INSERT INTO operaciones 

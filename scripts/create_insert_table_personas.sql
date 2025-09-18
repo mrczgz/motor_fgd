@@ -6,7 +6,9 @@ CREATE OR REPLACE TABLE personas (
     tipo_identificador  VARCHAR(10)                 COMMENT 'Tipo de documento: DNI, NIF, NIE',
     identificador       VARCHAR(20)                 COMMENT 'Número de identificación',
     telefono            VARCHAR(20)                 COMMENT 'Número de teléfono de contacto',
-    correo              VARCHAR(150)                COMMENT 'Correo electrónico' 
+    correo              VARCHAR(150)                COMMENT 'Correo electrónico', 
+    entidad             VARCHAR(4)                  COMMENT 'Entidad bancaria', 
+    periodo             VARCHAR(4)                  COMMENT 'Periodo'
 );
 
 INSERT INTO personas 

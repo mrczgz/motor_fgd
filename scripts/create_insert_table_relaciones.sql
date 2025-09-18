@@ -3,8 +3,11 @@ CREATE OR REPLACE TABLE relaciones (
     persona_id              INT                      COMMENT 'Identificador de la persona (referencia a Personas)',
     operacion_id            INT                      COMMENT 'Identificador de la operación (referencia a Operaciones',
     tipo_relacion           VARCHAR(50)              COMMENT 'Tipo de relación: Titular, No Titular, Cotitular',
-    participacion           DECIMAL(5,2)             COMMENT 'Porcentaje de participación en la operación'
+    participacion           DECIMAL(5,2)             COMMENT 'Porcentaje de participación en la operación',
+    entidad             VARCHAR(4)                   COMMENT 'Entidad bancaria', 
+    periodo             VARCHAR(4)                   COMMENT 'Periodo'
 );
+
 
 INSERT INTO relaciones 
     (relacion_id,persona_id,operacion_id,tipo_relacion,participacion)
