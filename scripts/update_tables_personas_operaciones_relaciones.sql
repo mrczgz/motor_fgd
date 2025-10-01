@@ -11,3 +11,7 @@ SET entidad = '0049',
 UPDATE relaciones
 SET entidad = '0049',
     periodo = '0925';
+	
+UPDATE personas
+SET    pais = 'ES'
+;
